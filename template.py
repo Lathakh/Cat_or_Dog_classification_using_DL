@@ -34,7 +34,7 @@ for filepath in list_of_files:
     # if the directory/folder is not empty (means must be there atleast one file inside folder) , then create folder  and logging info with created directory 
     if filedir !="":
         os.makedirs(filedir, exist_ok=True)
-        logging.info("creating directory :{filedir} for file :{filename}")
+        logging.info("great job you have created directory :{filedir} for file :{filename}")
 
     ##creating file inside folder/directory
     #if the file not present inside folder or file with zero size/empty file then create file inside folder. else logging info as file already exist/created
@@ -45,5 +45,5 @@ for filepath in list_of_files:
 
     # if file as more than 0 size or file  exist then controller will come to else condition
     else:
-        logging.info(f"{filepath} : file is alredy exist/created")
+        logging.info(f"{filepath} : file is alredy created")
 
